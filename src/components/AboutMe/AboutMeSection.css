@@ -81,3 +81,30 @@
     border-radius: 50%;
     background-color: #0d1117; /* Dark inner background if image has transparency */
   }
+
+  .download-btn {
+    display: inline-block;
+    padding: 22px 32px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(to right, #a855f7, #3b82f6);
+    border-radius: 100px; /* Fully rounded */
+    text-align: center;
+    cursor: pointer;
+    margin: 66px 0px 0px 0px ;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .download-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .gradient-text {
+    background: linear-gradient(to right, #a855f7, #3b82f6); /* purple to blue */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  

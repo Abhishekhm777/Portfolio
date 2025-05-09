@@ -8,7 +8,6 @@ const LandingScreen = () =>{
 
     return(
         <div id="landingScren">
-         <TopBar/>
          <AboutMeSection/>
           <Cards/>
 

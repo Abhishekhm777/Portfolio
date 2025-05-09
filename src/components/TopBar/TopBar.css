@@ -3,6 +3,12 @@
     justify-content:space-between;
     border-bottom: 2px solid transparent; /* First set it transparent */
     border-image: linear-gradient(to right, #a855f7, #3b82f6); /* Gradient */
+    position: fixed;
+    z-index: 1;
+    left:0;
+    right:0;
+    top: 0;
+    background-color: rgb(42, 57, 57);
   }
   
   #topTitle{

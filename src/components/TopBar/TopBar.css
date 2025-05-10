@@ -9,6 +9,14 @@
     right:0;
     top: 0;
     background-color: rgb(42, 57, 57);
+    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease; */
+  }
+
+  .TopBar.shadow {
+     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+     transition: transform 0.2s ease, box-shadow 0.2s ease; 
+
   }
   
   #topTitle{
@@ -29,6 +37,7 @@
     position: relative;
     font-weight: bold;
     cursor: pointer;
+    transition: all 0.2s ease;
   }
 
   .topSectionText::after {
@@ -46,4 +55,9 @@
   
   .topSectionText:hover::after {
     width: 100%;
+  }
+
+  .topSectionText:active {
+    transform: scale(0.80); /* shrink a bit when clicked */
+    
   }

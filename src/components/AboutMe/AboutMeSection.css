@@ -101,10 +101,15 @@
     transform: translateY(-4px);
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
   }
-
+  
+  .download-btn:active{
+    transform: scale(0.80);
+  }
   .gradient-text {
     background: linear-gradient(to right, #a855f7, #3b82f6); /* purple to blue */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
+  
   

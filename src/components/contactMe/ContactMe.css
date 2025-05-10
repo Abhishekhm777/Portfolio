@@ -1,0 +1,68 @@
+.contactme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 12rem 0 6rem 0;
+  flex-direction: column;
+}
+
+.contactText {
+  font-size: 50px;
+  margin-bottom: 0;
+}
+.reachOutText {
+  background: linear-gradient(to right, #a855f7, #3b82f6); /* purple to blue */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 20px;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 20px;
+}
+
+.socialIcons img {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: none;
+  width: 42px;
+  height: 42px;
+  margin: 18px;
+  margin-top: 4rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.socialIcons.animate img {
+  animation: dropIn 0.5s ease forwards;
+}
+
+.socialIcons img:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
+}
+
+.socialIcons img:active {
+  transform: translateY(-4px);
+}
+
+.socialIcons.animate img:nth-child(1) {
+  animation-delay: 0.8s;
+}
+.socialIcons.animate img:nth-child(2) {
+  animation-delay: 1.6s;
+}
+.socialIcons.animate img:nth-child(3) {
+  animation-delay: 1.9s;
+}
+.socialIcons.animate img:nth-child(4) {
+  animation-delay: 2.3s;
+}
+
+@keyframes dropIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -21,10 +21,10 @@ const AboutMeSection = () => {
           infrastructure.
         </p>
         <a
-          href="https://drive.google.com/uc?export=download&id=1CWThcg-rUrx0keOPhpN9LT0Rk86yf8V8"
-          download
+        // // href="https://drive.google.com/uc?export=download&id=1CWThcg-rUrx0keOPhpN9LT0Rk86yf8V8"
+        // download
         >
-          <div className="download-btn">Download CV</div>
+          <h1 className="download-btn">Download CV</h1>
         </a>
       </div>
 

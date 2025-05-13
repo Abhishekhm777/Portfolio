@@ -1,29 +1,33 @@
 import React from "react";
 import "./Cards.css";
+import article1 from "../../images/article1.png";
+import article2 from "../../images/article2.png";
+import article3 from "../../images/article3.png";
+import article4 from "../../images/article4.png";
 
 const cardData = [
   {
     title: "Health",
     subtitle: "Knows you by heart.",
-    img: "/path-to-your-heart-image.jpg",
+    img: article1,
     color: "#FFD9C0",
   },
   {
     title: "Fitness",
     subtitle: "Every move counts.",
-    img: "/path-to-your-fitness-image.jpg",
+    img: article2,
     color: "#E6F0FA",
   },
   {
     title: "Connectivity",
     subtitle: "The right call for staying in touch.",
-    img: "/path-to-your-connectivity-image.jpg",
+    img: article3,
     color: "#FFEFF3",
   },
   {
     title: "Safety",
     subtitle: "Good help is easy to find.",
-    img: "/path-to-your-safety-image.jpg",
+    img: article4,
     color: "#C8F7C5",
   },
 ];
@@ -32,7 +36,23 @@ const Cards = () => {
   return (
     <div className="cards-container">
       {cardData.map((card, index) => (
-        <div key={index} className="card">
+        <div
+          key={index}
+          className="card"
+          style={{
+            background: card?.color,
+            border: `${22}px solid ${card?.color}`,
+          }}
+        >
+          {/* <div
+            className="card-content"
+            style={{
+              backgroundColor: card?.color,
+            }}
+          >
+            <h4>{card.title}</h4>
+            <h2>{card.subtitle}</h2>
+          </div> */}
           <div
             className="card-image"
             style={{
@@ -40,10 +60,6 @@ const Cards = () => {
               backgroundColor: card?.color,
             }}
           ></div>
-          <div className="card-content">
-            <h4>{card.title}</h4>
-            <h2>{card.subtitle}</h2>
-          </div>
         </div>
       ))}
     </div>

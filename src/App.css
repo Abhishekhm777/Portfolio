@@ -2,16 +2,9 @@
   /* height: 100vh; */
 }
 
-#landingScren{
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* min-height: 100vh; */
+#landingScren {
+  border-bottom-right-radius: 42px;
+  border-bottom-left-radius: 42px;
+  background-color: rgb(42, 57, 57);
+  box-shadow: 0 50px 90px rgba(0, 0, 0, 0.4);
 }
-
-
-
-
-
-
-
-

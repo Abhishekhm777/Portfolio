@@ -11,7 +11,7 @@ const ContactMe = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollBottom =
-        window.innerHeight + window.scrollY >= document.body.offsetHeight + 100;
+        window.innerHeight + window.scrollY >= document.body.offsetHeight - 100;
 
       if (scrollBottom) {
         requestAnimationFrame(() => setAnimate(true));

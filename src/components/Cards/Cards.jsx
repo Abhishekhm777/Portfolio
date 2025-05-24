@@ -5,7 +5,7 @@ import article2 from "../../images/article2.png";
 import article3 from "../../images/article3.png";
 import article4 from "../../images/article4.png";
 
-const cardData = [
+export const cardData = [
   {
     title: "Health",
     subtitle: "Knows you by heart.",

@@ -1,0 +1,31 @@
+.lang-container {
+  text-align: center;
+  flex-direction: column;
+}
+.grid {
+  display: grid;
+  gap: 2rem;
+  margin-top: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+}
+
+.header {
+  margin-top: 0;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 0.5rem;
+}
+
+.item p {
+  margin: 0;
+  font-size: 1rem;
+}

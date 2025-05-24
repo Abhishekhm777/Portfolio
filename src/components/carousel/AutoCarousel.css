@@ -1,0 +1,28 @@
+.carousel-container {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  align-self: center;
+  width: 40rem;
+  margin: auto;
+  align-items: center;
+}
+
+.carousel-container::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-item {
+  /* scroll-snap-align: start; */
+  /* position: relative; */
+  margin: 20px;
+}
+
+.carousel-item img {
+  height: 300px;
+  width: 300px;
+  object-fit: contain;
+  /* display: block; */
+}

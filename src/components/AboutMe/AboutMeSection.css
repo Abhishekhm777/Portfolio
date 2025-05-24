@@ -23,7 +23,8 @@
 }
 
 .profilePic {
-  width: 400px;
+  width: 20vw;
+  min-width: 100px;
   border-radius: 50%;
   background-color: #0d1117;
   padding: 16px;
@@ -33,7 +34,7 @@
   font-size: 80px;
 }
 #aboutSection {
-  font-size: 4rem;
+  font-size: 3.6vw;
   font-weight: bold;
   color: white;
   line-height: 1.2;
@@ -109,4 +110,63 @@
   background: linear-gradient(to right, #a855f7, #3b82f6); /* purple to blue */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/* ================ RESPONSIVE BREAKPOINTS ================ */
+
+/* 📱 Phones (max 480px) */
+@media (max-width: 480px) {
+  #aboutMe {
+    flex-direction: column;
+    margin: 16px;
+    gap: 1rem;
+  }
+
+  #aboutSection {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  #descriptionText {
+    font-size: 1rem;
+    padding: 1rem 0;
+  }
+
+  .profilePic {
+    max-width: 250px;
+    padding: 12px;
+  }
+
+  .download-btn {
+    font-size: 0.9rem;
+    padding: 12px 24px;
+  }
+}
+
+/* 🧾 Tablets (max 768px) */
+@media (max-width: 768px) {
+  #aboutMe {
+    flex-direction: column;
+    margin-top: 60px;
+    gap: 1.5rem;
+  }
+
+  #aboutSection {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  #descriptionText {
+    font-size: 1.1rem;
+    width: 100%;
+  }
+
+  .profilePic {
+    max-width: 300px;
+  }
+
+  .download-btn {
+    padding: 14px 26px;
+    font-size: 1rem;
+  }
 }

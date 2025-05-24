@@ -1,63 +1,113 @@
-.TopBar{
-    display: flex;
-    justify-content:space-between;
-    border-bottom: 2px solid transparent; /* First set it transparent */
-    border-image: linear-gradient(to right, #a855f7, #3b82f6); /* Gradient */
-    position: fixed;
-    z-index: 1;
-    left:0;
-    right:0;
-    top: 0;
-    background-color: rgb(42, 57, 57);
-    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+.TopBar {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid transparent; /* First set it transparent */
+  border-image: linear-gradient(to right, #a855f7, #3b82f6); /* Gradient */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: rgb(42, 57, 57);
+  /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
     transition: transform 0.2s ease, box-shadow 0.2s ease; */
+}
+
+.TopBar.shadow {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#topTitle {
+  flex: 0.3;
+  text-align: center;
+}
+
+.topSection {
+  display: flex;
+  flex: 0.5;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.topSectionText {
+  font-size: medium;
+  position: relative;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.topSectionText::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 4px;
+  top: 2px;
+  margin-top: 22px;
+  background: linear-gradient(to right, #a855f7, #3b82f6);
+  transition: width 0.4s ease;
+}
+
+.topSectionText:hover::after {
+  width: 100%;
+}
+
+.topSectionText:active {
+  transform: scale(0.8); /* shrink a bit when clicked */
+}
+
+/* --------------------- */
+/* 📱 Responsive Queries */
+/* --------------------- */
+
+@media (max-width: 1115px) {
+  .topSection {
+    /* flex-wrap: wrap; */
+    flex: 0.7;
+  }
+}
+
+/* For tablets and below */
+@media (max-width: 768px) {
+  .TopBar {
+    flex-direction: column;
+    padding: 1rem;
   }
 
-  .TopBar.shadow {
-     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-     transition: transform 0.2s ease, box-shadow 0.2s ease; 
-
-  }
-  
-  #topTitle{
-    flex: 0.3;
-    text-align: center;
-  }
-  
-  .topSection{
-    display: flex;
-    flex: 0.5;
-    justify-content: space-evenly;
-    align-items: center;
-    
-  }
-  
-  .topSectionText{
-    font-size: medium;
-    position: relative;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.2s ease;
+  #topTitle {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
   }
 
-  .topSectionText::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0%;
-    height: 4px;
-    top:2px;
-    margin-top: 22px;
-    background: linear-gradient(to right, #a855f7, #3b82f6);
-    transition: width 0.4s ease;
-  }
-  
-  .topSectionText:hover::after {
-    width: 100%;
+  .topSection {
+    /* flex-wrap: wrap; */
+    gap: 0.5rem;
   }
 
-  .topSectionText:active {
-    transform: scale(0.80); /* shrink a bit when clicked */
-    
+  .topSectionText {
+    font-size: 0.9rem;
   }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+  .TopBar {
+    padding: 0.5rem;
+  }
+
+  #topTitle {
+    font-size: 1.2rem;
+  }
+
+  .topSection {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .topSectionText {
+    font-size: 0.85rem;
+  }
+}

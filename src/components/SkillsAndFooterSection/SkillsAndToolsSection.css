@@ -1,6 +1,7 @@
 .container {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   margin: 9em 8em 0 8em;
 }
@@ -11,7 +12,7 @@
 .contentContainer {
   margin: 6rem 0 0 0;
   display: flex;
-  /* width: 80%; */
+  width: 80%;
   justify-content: center;
   align-items: flex-start;
 }

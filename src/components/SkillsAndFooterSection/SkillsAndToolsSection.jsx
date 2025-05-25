@@ -2,6 +2,7 @@ import React from "react";
 import "./SkillsAndToolsSection.css";
 import GridView from "./GridView";
 import { FRAMEWORKS, LANGUAGES, TOOLS } from "../../constants/const";
+import Expertise from "../Expertise/Expertise";
 
 const SkillsAndTools = () => {
   const Content = ({ icon, text }) => {
@@ -20,6 +21,7 @@ const SkillsAndTools = () => {
       </div>
 
       <div className="contentContainer">
+        <Expertise icons={TOOLS} />
         <div className="gradient-border">
           <div className="content">
             <GridView header={"Programming Languages"} items={LANGUAGES} />
@@ -31,6 +33,7 @@ const SkillsAndTools = () => {
             <GridView header={"Frameworks & Tools"} items={FRAMEWORKS} />
           </div>
         </div>
+        <Expertise icons={TOOLS} />
       </div>
     </div>
   );

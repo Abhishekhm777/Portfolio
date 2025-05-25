@@ -1,0 +1,120 @@
+.scroller-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  overflow: hidden;
+  height: 300px;
+  padding: 20px 0;
+  justify-content: center;
+  background-color: rgb(42, 57, 57);
+}
+
+/* Blurred gradient edges */
+.scroller-wrapper::before,
+.scroller-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 60px;
+  height: 100%;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.scroller-wrapper::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    rgb(42, 57, 57) 0%,
+    rgba(42, 57, 57, 0) 100%
+  );
+}
+
+.scroller-wrapper::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    rgb(42, 57, 57) 0%,
+    rgba(42, 57, 57, 0) 100%
+  );
+}
+
+.scroll-row {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  position: relative;
+}
+
+.scroll-content {
+  display: inline-flex;
+  gap: 40px;
+}
+
+.scroll-row.left .scroll-content {
+  animation: scroll-left 80s linear infinite;
+}
+
+.scroll-row.right .scroll-content {
+  animation: scroll-right 80s linear infinite;
+}
+
+.scroll-row:hover .scroll-content {
+  animation-play-state: paused;
+}
+
+.icon-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  transition: transform 0.1s;
+}
+
+.tooltip {
+  visibility: hidden;
+  opacity: 0;
+  width: max-content;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 4px 8px;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  white-space: nowrap;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+.icon-wrapper:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Keyframes */
+@keyframes scroll-left {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}

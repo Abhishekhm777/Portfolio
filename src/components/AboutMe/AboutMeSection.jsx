@@ -20,10 +20,7 @@ const AboutMeSection = () => {
           and coordinating with teams responsible for various layers of product
           infrastructure.
         </p>
-        <a
-        // // href="https://drive.google.com/uc?export=download&id=1CWThcg-rUrx0keOPhpN9LT0Rk86yf8V8"
-        // download
-        >
+        <a href="https://drive.google.com/uc?export=download&id=1CWThcg-rUrx0keOPhpN9LT0Rk86yf8V8">
           <h1 className="download-btn">Download CV</h1>
         </a>
       </div>

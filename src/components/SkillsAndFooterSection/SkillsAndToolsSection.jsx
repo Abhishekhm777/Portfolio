@@ -28,7 +28,7 @@ const SkillsAndTools = () => {
 
         <div className="gradient-border">
           <div className="content">
-            <GridView header={"Frameworks"} items={FRAMEWORKS} />
+            <GridView header={"Frameworks & Tools"} items={FRAMEWORKS} />
           </div>
         </div>
       </div>

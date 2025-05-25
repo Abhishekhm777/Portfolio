@@ -54,12 +54,16 @@ export const FRAMEWORKS = [
     img: "https://reactnative.dev/img/header_logo.svg",
   },
   {
-    name: "Android",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg",
+    name: "Electron",
+    img: "https://logo.svgcdn.com/l/electron.png",
   },
   {
-    name: "iOS",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg",
+    name: "Jenkins",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg",
+  },
+  {
+    name: "Xcode",
+    img: "https://developer.apple.com/assets/elements/icons/xcode/xcode-128x128_2x.png",
   },
 ];
 

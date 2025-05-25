@@ -29,10 +29,41 @@ const ContactMe = () => {
         Feel free to reach out me for any questions and opportunities.
       </h1>
       <div className={`socialIcons ${animate ? "animate" : ""}`}>
-        <img src={instagram} alt="instagram_icon" />
-        <img src={linkedin} alt="instagram_icon" />
-        <img src={github} alt="instagram_icon" />
-        <img src={gmail} alt="instagram_icon" />
+        <img
+          src={instagram}
+          alt="instagram_icon"
+          onClick={() =>
+            window.open("https://www.instagram.com/abhishek_hm/", "_blank")
+          }
+          style={{ cursor: "pointer" }}
+        />
+        <img
+          src={linkedin}
+          alt="linkedin_icon"
+          onClick={() =>
+            window.open(
+              "https://www.linkedin.com/in/abhishek-hm-744953155/",
+              "_blank"
+            )
+          }
+          style={{ cursor: "pointer" }}
+        />
+        <img
+          src={github}
+          alt="github_icon"
+          onClick={() =>
+            window.open("https://github.com/Abhishekhm777", "_blank")
+          }
+          style={{ cursor: "pointer" }}
+        />
+        <img
+          src={gmail}
+          alt="gmail_icon"
+          onClick={() =>
+            (window.location.href = "mailto:abhishekhm777@gmail.com")
+          }
+          style={{ cursor: "pointer" }}
+        />
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./ContactMe.css";
+import "./ContactMeSection.css";
 import instagram from "../../icons/instagram.png";
 import github from "../../icons/github-logo.png";
 import linkedin from "../../icons/linkedin.png";

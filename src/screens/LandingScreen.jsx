@@ -1,8 +1,8 @@
 import React from "react";
 import Cards from "../components/Cards/Cards";
 import AboutMeSection from "../components/AboutMe/AboutMeSection";
-import ContactMe from "../components/ContactMe/ContactMe";
-import SkillsAndTools from "../components/SkillsAndTools/SkillsAndTools";
+import ContactMe from "../components/ContactMeSection/ContactMeSection";
+import SkillsAndTools from "../components/SkillsAndFooterSection/SkillsAndToolsSection";
 
 const LandingScreen = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import "./SkillsAndTools.css";
+import "./SkillsAndToolsSection.css";
 import GridView from "./GridView";
 import { FRAMEWORKS, LANGUAGES, TOOLS } from "../../constants/const";
 

@@ -5,7 +5,7 @@ import { EXPERIENCE_DATA } from "../../constants/experienceData";
 
 const Experience = ({ company }) => {
   return (
-    <div id="experience-container">
+    <section id="experience-container">
       <div className="header">
         <h1 className="skillsHeading">Skills & Tools</h1>
       </div>
@@ -13,7 +13,7 @@ const Experience = ({ company }) => {
         <ExperienceCard company={EXPERIENCE_DATA} />
         <ExperienceCard company={EXPERIENCE_DATA} />
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -2,6 +2,10 @@
   min-width: 1050px;
 }
 
+section {
+  scroll-margin-top: 100px;
+}
+
 #landingScren {
   border-bottom-right-radius: 42px;
   border-bottom-left-radius: 42px;

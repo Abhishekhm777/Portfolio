@@ -34,7 +34,7 @@ export const cardData = [
 
 const Cards = () => {
   return (
-    <div className="cards-container">
+    <section className="cards-container">
       {cardData.map((card, index) => (
         <div
           key={index}
@@ -62,7 +62,7 @@ const Cards = () => {
           ></div>
         </div>
       ))}
-    </div>
+    </section>
   );
 };
 

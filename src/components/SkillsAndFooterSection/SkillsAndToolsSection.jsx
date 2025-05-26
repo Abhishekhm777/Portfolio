@@ -15,7 +15,7 @@ const SkillsAndTools = () => {
   };
 
   return (
-    <div id="skills-container">
+    <section id="skills-container">
       <div className="header">
         <h1 className="skillsHeading">Skills & Tools</h1>
       </div>
@@ -35,7 +35,7 @@ const SkillsAndTools = () => {
         </div>
         <Expertise icons={TOOLS} />
       </div>
-    </div>
+    </section>
   );
 };
 

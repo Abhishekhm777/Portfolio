@@ -4,7 +4,7 @@ import "./AboutMeSection.css";
 
 const AboutMeSection = () => {
   return (
-    <div id="aboutMe">
+    <section id="aboutMe">
       <div id="aboutSection">
          
         <p>
@@ -28,7 +28,7 @@ const AboutMeSection = () => {
       <div id="aboutProfileSection">
         <img src={profile_icon} alt="Abhishek" className="profilePic" />
       </div>
-    </div>
+    </section>
   );
 };
 

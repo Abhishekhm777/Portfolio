@@ -23,7 +23,7 @@ const ContactMe = () => {
   }, []);
 
   return (
-    <div id="contactme">
+    <section id="contactme">
       <h1 className="contactText">Contact me</h1>
       <h1 className="reachOutText">
         Feel free to reach out me for any questions and opportunities.
@@ -65,7 +65,7 @@ const ContactMe = () => {
           style={{ cursor: "pointer" }}
         />
       </div>
-    </div>
+    </section>
   );
 };
 

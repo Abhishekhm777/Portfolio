@@ -21,6 +21,7 @@
 #topTitle {
   flex: 0.3;
   text-align: center;
+  cursor: pointer;
 }
 
 .topSection {

@@ -13,6 +13,13 @@ const TopBar = () => {
     }
   }, []);
 
+  const handleOnHeaderClick = useCallback(() => {
+    const element = document.getElementById("aboutMe");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
+
   useEffect(() => {
     const handleScroll = debounce(() => {
       const shouldUpdate = window.scrollY > 50;
@@ -48,7 +55,9 @@ const TopBar = () => {
 
   return (
     <div className={`TopBar ${hasShadow ? "shadow" : ""}`}>
-      <h1 id="topTitle">My Portfolio</h1>
+      <h1 onClick={handleOnHeaderClick} id="topTitle">
+        My Portfolio
+      </h1>
       {renderSectionItems()}
     </div>
   );

@@ -6,6 +6,13 @@ import { debounce } from "../../utills/costomUtils";
 const TopBar = () => {
   const [hasShadow, setHasShadow] = useState(false);
 
+  const handleOnClick = useCallback((id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
+
   useEffect(() => {
     const handleScroll = debounce(() => {
       const shouldUpdate = window.scrollY > 50;
@@ -26,7 +33,11 @@ const TopBar = () => {
       <div className="topSection">
         {SECTION_ITEMS?.map((item) => {
           return (
-            <h1 key={`${item?.id}-${item?.title}`} className="topSectionText">
+            <h1
+              onClick={() => handleOnClick(item?.id)}
+              key={`${item?.id}-${item?.title}`}
+              className="topSectionText"
+            >
               {item?.title}
             </h1>
           );

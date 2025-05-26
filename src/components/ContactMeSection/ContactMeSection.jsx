@@ -23,7 +23,7 @@ const ContactMe = () => {
   }, []);
 
   return (
-    <div className="contactme">
+    <div id="contactme">
       <h1 className="contactText">Contact me</h1>
       <h1 className="reachOutText">
         Feel free to reach out me for any questions and opportunities.

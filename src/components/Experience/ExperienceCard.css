@@ -1,0 +1,72 @@
+.experience-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 16px;
+  max-width: 600px;
+  font-family: sans-serif;
+  /* background-color: #fff; */
+  margin: 24px;
+}
+
+.experience-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.company-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.company-name {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.employment-type {
+  font-size: 14px;
+  color: #666;
+}
+
+.role-entry {
+  display: flex;
+  position: relative;
+  margin-left: 16px;
+  padding-left: 12px;
+  border-left: 2px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.role-timeline {
+  width: 10px;
+  height: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  position: absolute;
+  left: -6px;
+  /* top: 6px; */
+}
+
+.role-details {
+  margin-left: 12px;
+}
+
+.role-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.duration-location {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 4px;
+}
+
+.skills {
+  font-size: 14px;
+  color: #000;
+}

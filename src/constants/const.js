@@ -1,23 +1,23 @@
 export const SECTION_ITEMS = [
   {
     title: "About me",
-    id: 1,
+    id: "aboutMe",
   },
   {
     title: "Skills & Tools",
-    id: 2,
+    id: "skills-container",
   },
   {
     title: "Experience",
-    id: 3,
+    id: "experience-container",
   },
   {
     title: "Projects",
-    id: 4,
+    id: "cards-container",
   },
   {
-    title: "Education",
-    id: 5,
+    title: "Contact Me",
+    id: "contactme",
   },
 ];
 

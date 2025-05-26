@@ -10,7 +10,7 @@ const ExperienceCard = ({ company }) => {
           alt={`${company?.name} Logo`}
           className="company-logo"
         />
-        <div>
+        <div className="company-container">
           <h3 className="company-name">{company?.name}</h3>
           <p className="employment-type">
             {company?.type} · {company?.duration}

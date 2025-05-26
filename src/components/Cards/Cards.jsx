@@ -4,6 +4,7 @@ import article1 from "../../images/article1.png";
 import article2 from "../../images/article2.png";
 import article3 from "../../images/article3.png";
 import article4 from "../../images/article4.png";
+import { ARTICLES_LINK } from "../../constants/const";
 
 export const cardData = [
   {
@@ -33,12 +34,16 @@ export const cardData = [
 ];
 
 const Cards = () => {
+  const handleCardClick = (index) => {
+    window.open(ARTICLES_LINK[index], "_blank");
+  };
   return (
-    <section className="cards-container">
+    <section id="cards-container">
       {cardData.map((card, index) => (
         <div
           key={index}
           className="card"
+          onClick={() => handleCardClick(index)}
           style={{
             background: card?.color,
             border: `${22}px solid ${card?.color}`,

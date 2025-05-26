@@ -1,7 +1,7 @@
 #aboutMe {
-  margin: 28px;
+  margin-top: 88px;
   display: flex;
-  height: 80vh;
+  height: 70vh;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-around;
@@ -41,7 +41,7 @@
 }
 #descriptionText {
   font-size: 22px;
-  width: 44rem;
+  width: 56rem;
   padding-top: 2rem;
   color: rgb(210, 206, 206);
 }

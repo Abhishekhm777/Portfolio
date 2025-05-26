@@ -2,9 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 12rem 0 rem 0;
   flex-direction: column;
-  padding: 10rem 0 2rem 0;
+  padding-bottom: 20px;
 }
 
 .contactText {

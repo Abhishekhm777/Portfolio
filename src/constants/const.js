@@ -12,7 +12,7 @@ export const SECTION_ITEMS = [
     id: "experience-container",
   },
   {
-    title: "Projects",
+    title: "Articles",
     id: "cards-container",
   },
   {
@@ -205,4 +205,11 @@ export const TOOLS = [
     name: "AI Tools",
     url: "https://www.svgrepo.com/show/4712035/ai.svg",
   },
+];
+
+export const ARTICLES_LINK = [
+  "https://medium.com/@abhishekhm777/dynamically-change-the-app-launcher-icon-in-react-native-apps-without-any-library-1fde7abeee19",
+  "https://medium.com/@abhishekhm777/accelerating-ios-or-react-native-development-with-xcode-cloud-ci-cd-c80d032dacd5",
+  "",
+  "https://medium.com/@abhishekhm777/bridgeless-mode-react-native-0-74-a3b801f6b973",
 ];

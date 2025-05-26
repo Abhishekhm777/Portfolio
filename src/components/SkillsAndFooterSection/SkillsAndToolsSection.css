@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 9em 8em 0 8em;
+  /* margin: 9em 8em 0 8em; */
 }
 .header {
   align-self: flex-start;

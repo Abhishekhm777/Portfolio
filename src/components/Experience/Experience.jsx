@@ -1,17 +1,17 @@
 import React from "react";
 import "./Experience.css";
 import ExperienceCard from "./ExperienceCard";
-import { EXPERIENCE_DATA } from "../../constants/experienceData";
 
-const Experience = ({ company }) => {
+const Experience = ({ companies }) => {
   return (
     <section id="experience-container">
       <div className="header">
-        <h1 className="skillsHeading">Skills & Tools</h1>
+        <h1 className="skillsHeading">Experience</h1>
       </div>
       <div className="card-container">
-        <ExperienceCard company={EXPERIENCE_DATA} />
-        <ExperienceCard company={EXPERIENCE_DATA} />
+        {companies?.map((company) => {
+          return <ExperienceCard company={company} />;
+        })}
       </div>
     </section>
   );

@@ -9,8 +9,8 @@ const Experience = ({ companies }) => {
         <h1 className="skillsHeading">Experience</h1>
       </div>
       <div className="card-container">
-        {companies?.map((company) => {
-          return <ExperienceCard company={company} />;
+        {companies?.map((company, index) => {
+          return <ExperienceCard company={company} index={index} key={index} />;
         })}
       </div>
     </section>

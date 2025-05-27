@@ -4,16 +4,16 @@ export const SECTION_ITEMS = [
     id: "aboutMe",
   },
   {
-    title: "Skills & Tools",
-    id: "skills-container",
+    title: "Articles",
+    id: "cards-container",
   },
   {
     title: "Experience",
     id: "experience-container",
   },
   {
-    title: "Articles",
-    id: "cards-container",
+    title: "Skills & Tools",
+    id: "skills-container",
   },
   {
     title: "Contact Me",

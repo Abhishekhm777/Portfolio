@@ -1,8 +1,26 @@
 import React from "react";
 import profile_icon from "../../images/profile_icon.png";
 import "./AboutMeSection.css";
+import { getDatabase, ref, push, set } from "firebase/database";
+import { formatDateTime } from "../../utills/dateFormator";
 
 const AboutMeSection = () => {
+  // Trigger actual CV download
+
+  const handleDownloadClick = () => {
+    window.location.href =
+      "https://drive.google.com/uc?export=download&id=1CWThcg-rUrx0keOPhpN9LT0Rk86yf8V8";
+
+    const db = getDatabase();
+    const downloadsRef = ref(db, "cvDownloads");
+    const newDownloadRef = push(downloadsRef);
+    const timestamp = formatDateTime();
+    set(newDownloadRef, {
+      timestamp: timestamp,
+      userAgent: navigator.userAgent,
+    });
+  };
+
   return (
     <section id="aboutMe">
       <div id="aboutSection">
@@ -20,9 +38,12 @@ const AboutMeSection = () => {
           and coordinating with teams responsible for various layers of product
           infrastructure.
         </p>
-        <a href="https://drive.google.com/uc?export=download&id=1CWThcg-rUrx0keOPhpN9LT0Rk86yf8V8">
-          <h1 className="download-btn">Download CV</h1>
-        </a>
+        <h1 onClick={handleDownloadClick} className="download-btn">
+          Download CV
+        </h1>
+        {/* <a href="https://drive.google.com/uc?export=download&id=1CWThcg-rUrx0keOPhpN9LT0Rk86yf8V8">
+        <h1 className="download-btn">Download CV</h1>
+        </a> */}
       </div>
 
       <div id="aboutProfileSection">

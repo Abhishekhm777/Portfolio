@@ -33,7 +33,7 @@ const SkillsAndTools = () => {
             <GridView header={"Frameworks & Tools"} items={FRAMEWORKS} />
           </div>
         </div>
-        <Expertise icons={TOOLS} />
+        <Expertise icons={TOOLS.reverse()} />
       </div>
     </section>
   );

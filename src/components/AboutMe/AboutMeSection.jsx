@@ -3,14 +3,13 @@ import profile_icon from "../../images/profile_icon.png";
 import "./AboutMeSection.css";
 import { getDatabase, ref, push, set } from "firebase/database";
 import { formatDateTime } from "../../utills/dateFormator";
+import { RESUME_LILNK } from "../../constants/const";
 
 const AboutMeSection = () => {
   // Trigger actual CV download
 
   const handleDownloadClick = () => {
-    window.location.href =
-      "https://drive.google.com/uc?export=download&id=1CWThcg-rUrx0keOPhpN9LT0Rk86yf8V8";
-
+    window.location.href = RESUME_LILNK;
     const db = getDatabase();
     const downloadsRef = ref(db, "cvDownloads");
     const newDownloadRef = push(downloadsRef);

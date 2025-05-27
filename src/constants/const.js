@@ -1,6 +1,8 @@
+export const RESUME_LILNK =
+  "https://drive.google.com/file/d/1KNQ65ge9M2QcB6WUByTsWNq0x0XZNBEV/view?usp=drive_link";
 export const SECTION_ITEMS = [
   {
-    title: "About me",
+    title: "About Me",
     id: "aboutMe",
   },
   {
@@ -107,11 +109,11 @@ export const TOOLS = [
   },
   {
     name: "Zustand",
-    url: "https://raw.githubusercontent.com/pmndrs/zustand/main/resources/zustand-bear.svg",
+    url: "https://cdn.worldvectorlogo.com/logos/stellar.svg",
   },
   {
-    name: "React Query",
-    url: "https://seeklogo.com/images/R/react-query-logo-1340EA4CE9-seeklogo.com.svg",
+    name: "Expo",
+    url: "https://cdn.worldvectorlogo.com/logos/expo-1.svg",
   },
   {
     name: "CSS3",
@@ -134,20 +136,12 @@ export const TOOLS = [
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
   },
   {
-    name: "AWS",
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg",
-  },
-  {
     name: "Firebase",
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
   },
   {
     name: "Jest",
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg",
-  },
-  {
-    name: "WebSockets",
-    url: "https://www.svgrepo.com/show/354553/websocket.svg",
   },
   {
     name: "Automation",
@@ -162,48 +156,40 @@ export const TOOLS = [
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg",
   },
   {
-    name: "Zookeeper",
-    url: "https://commons.wikimedia.org/wiki/File:Apache_ZooKeeper_logo.svg",
-  },
-  {
     name: "iOS",
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg",
   },
   {
-    name: "Xcode",
-    url: "https://commons.wikimedia.org/wiki/File:Xcode.svg",
-  },
-  {
-    name: "Xcode Cloud",
-    url: "https://developer.apple.com/assets/elements/icons/cloud/cloud-128x128_2x.png",
+    name: "Cloud",
+    url: "https://cdn.worldvectorlogo.com/logos/google-cloud.svg",
   },
   {
     name: "App Store",
-    url: "https://commons.wikimedia.org/wiki/File:App_Store_(iOS).svg",
+    url: "https://cdn.worldvectorlogo.com/logos/apple-app-store.svg",
   },
   {
     name: "Play Store",
-    url: "https://commons.wikimedia.org/wiki/File:Google_Play_2022_logo.svg",
+    url: "https://cdn.worldvectorlogo.com/logos/google-play-5.svg",
   },
   {
     name: "GraphQL",
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
   },
   {
-    name: "Sentry",
-    url: "https://sentry-brand.storage.googleapis.com/sentry-logo-black.svg",
+    name: "AWS",
+    url: "https://cdn.worldvectorlogo.com/logos/amazon-web-services-2.svg",
   },
   {
-    name: "CleverTap",
-    url: "https://brandfetch.com/clevertap.com",
+    name: "Android Studio",
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg",
   },
   {
     name: "CodePush",
-    url: "https://www.svgrepo.com/show/353580/codepush.svg",
+    url: "https://cdn.worldvectorlogo.com/logos/microsoft-visual-studio-app-center.svg",
   },
   {
-    name: "AI Tools",
-    url: "https://www.svgrepo.com/show/4712035/ai.svg",
+    name: "Sentry",
+    url: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons@master/svg/sentry.svg",
   },
 ];
 

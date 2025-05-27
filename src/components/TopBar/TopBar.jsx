@@ -54,12 +54,12 @@ const TopBar = () => {
   }, []);
 
   return (
-    <div className={`TopBar ${hasShadow ? "shadow" : ""}`}>
+    <header className={`TopBar ${hasShadow ? "shadow" : ""}`}>
       <h1 onClick={handleOnHeaderClick} id="topTitle">
         My Portfolio
       </h1>
       {renderSectionItems()}
-    </div>
+    </header>
   );
 };
 

@@ -1,5 +1,5 @@
 export const RESUME_LILNK =
-  "https://drive.google.com/file/d/1KNQ65ge9M2QcB6WUByTsWNq0x0XZNBEV/view?usp=drive_link";
+  "https://drive.google.com/file/d/1tQxvBfx6cZ8sXyy5n0P6BRDh2VFzHJqp/view?usp=drive_link";
 export const SECTION_ITEMS = [
   {
     title: "About Me",

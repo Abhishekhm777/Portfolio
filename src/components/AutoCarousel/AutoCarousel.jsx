@@ -23,7 +23,7 @@ const AutoCarousel = ({ images, interval = 1000 }) => {
     }, interval);
 
     return () => clearInterval(autoScroll);
-  }, [images?.length, interval]);
+  }, []);
 
   return (
     <div

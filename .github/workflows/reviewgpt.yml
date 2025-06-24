@@ -1,4 +1,4 @@
-name: AI Code Review with ReviewGPT
+name: AI Code Review
 
 on:
   pull_request:
@@ -8,11 +8,11 @@ jobs:
   review:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout PR code
+      - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Run ReviewGPT
-        uses: lennykioko/reviewgpt@v1
+      - name: Run GPT Review
+        uses: microsoft/gpt-review@v0.9.5
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          openai-api-key: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

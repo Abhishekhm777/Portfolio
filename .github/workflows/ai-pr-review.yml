@@ -20,6 +20,7 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           review_simple_changes: true
           review_comment_lgtm: true
           openai_light_model: "gpt-3.5-turbo"
